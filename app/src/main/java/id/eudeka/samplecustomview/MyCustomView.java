@@ -9,10 +9,8 @@ import android.graphics.Rect;
 import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
-import android.view.View;
 import android.util.AttributeSet;
-
-import id.eudeka.samplecustomview.R;
+import android.view.View;
 
 public class MyCustomView extends View {
 
@@ -41,11 +39,11 @@ public class MyCustomView extends View {
         init(attrs);
     }
 
-    private void init(@Nullable AttributeSet set){
+    private void init(@Nullable AttributeSet set) {
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mRect = new Rect();
 
-        if(set == null){
+        if (set == null) {
             return;
         }
 
